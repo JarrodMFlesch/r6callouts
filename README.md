@@ -6,7 +6,7 @@ I have been playing Rainbow semi-competitively for the last year, I love this ga
   - A) I give a callout and my team doesn't understand what it means
   - B) My team gives a callout that I don't understand. 
 
-These can both be frustrating situations to be in for both parties, this tool aims to bridge the gap and provide common callouts that the community can use and know no matter what team you play on.
+These can be frustrating situations to be in for both parties, this tool aims to bridge the gap and provide common callouts that the community can use and know no matter what team you play on.
 
 ## Project Goals
   - Allow the community to contribute to this project via github (while following guidelines)
