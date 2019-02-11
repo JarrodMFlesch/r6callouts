@@ -1,46 +1,10 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-styled-components)
+# R6 Callouts
+Anyone who has played Rainbow Six Siege knows, it is ***very*** complex. There is a lot you need to know, and as a beginer, it's hard enough to wrap your mind around all of the different operators, what they are useful for, when to use them and when not to. Put all that aside and you are left with teammates giving callouts of maps you have never played on, leaving you confused and ready to hang up the sticks. This app aims to help you, it is a commonground where you can test your map knowledge and get to know those callouts and sooner or later you will not only understand the callouts but you will be able to contribute and callout for yourself. 
 
-# Example app with styled-components
+## Backstory
+I have been playing Rainbow semi-competitively for the last year, I love this game and I think you will too. I still struggle when I solo queue one of two things will happen: A) I give a callout and my team doesn't understand what it means or B) My team gives a callout that I don't understand. 
+These can both be frustrating situations to be in for both parties, this tool aims to bridge the gap and provide common callouts that the community can use and know no matter what team you play on.
 
-## How to use
-
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
-```
-
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-styled-components
-cd with-styled-components
-```
-
-Install it and run:
-
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
-
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
-
-```bash
-now
-```
-
-## The idea behind the example
-
-This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
-
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components`. (which is required for server side rendering)
+## Project Goals
+  - Allow the community to contribute to this project via github (while following guidelines)
+  - Make the community stronger and decrease the barrier to entry of this amazing game
