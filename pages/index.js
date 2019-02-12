@@ -62,14 +62,21 @@ class Callouts extends Component {
 	};
 
 	setActiveMapImages = map_name_passed => {
+		let foundMap = false;
+
 		CalloutImageJson.map(current_map => {
 			if (current_map.map_name === map_name_passed) {
 				this.setState(
 					{ map_images: current_map.images, map_image_index: 0 },
 					this.startTimer()
 				);
+				foundMap = true;
 			}
 		});
+
+		if (!foundMap) {
+			this.setState({ map_images: [], map_image_index: 0 }, this.stopTimer());
+		}
 	};
 
 	changeImage = () => {

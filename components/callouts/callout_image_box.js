@@ -84,6 +84,12 @@ class callout_image_box extends Component {
 		}
 	}
 
+	componentWillUnmount() {
+		if (this.hault_transition) {
+			clearTimeout(this.hault_transition);
+		}
+	}
+
 	render() {
 		return (
 			<ImageWrapper>

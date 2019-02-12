@@ -96,7 +96,7 @@ class map_selector extends Component {
 								key={item.map_name}
 								onClick={() => this.props.setActiveMap(item.map_name)}
 							>
-								<img src={item.image_path} alt="" />
+								<img src={item.image_path} alt={item.map_name} />
 								<span className="map_overlay" />
 							</li>
 						);

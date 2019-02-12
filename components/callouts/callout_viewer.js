@@ -27,9 +27,26 @@ const ViewerInformation = styled.div`
 	margin-top: 20px;
 	font-size: 2rem;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	font-weight: 700;
+	letter-spacing: 2px;
 	> span:last-child {
 		float: right;
+	}
+	> span:first-child {
+		float: left;
+	}
+
+	.coming_soon {
+		background: #04b995;
+		padding: 3px 9px;
+		border-radius: 4px;
+		font-size: 14px;
+		letter-spacing: 0.7px;
+		text-transform: uppercase;
+		font-weight: 800;
+		margin-left: 10px;
+		position: relative;
+		top: -3px;
 	}
 `;
 
@@ -40,27 +57,38 @@ class callout_viewer extends Component {
 				<div>
 					<ViewerInformation>
 						<span className="map_name">
-							{this.props.activeMap ? this.props.activeMap : 'No map selected'}
+							{this.props.activeMap ? this.props.activeMap : ''}
+							{this.props.activeMapImages[this.props.activeImageIndex] ===
+								undefined && <span className="coming_soon">Coming Soon</span>}
 						</span>
-						<span className="showing_info">
-							Showing {this.props.activeImageIndex + 1} of{' '}
-							{this.props.activeMapImages.length}
-						</span>
+
+						{this.props.activeMapImages[this.props.activeImageIndex] !==
+							undefined && (
+							<span className="showing_info">
+								Showing {this.props.activeImageIndex + 1} of{' '}
+								{this.props.activeMapImages.length}
+							</span>
+						)}
 					</ViewerInformation>
-					<CalloutImageBox
-						activeMap={this.props.activeMap}
-						timer={this.props.timer}
-						timerIsPaused={this.props.timerIsPaused}
-						activeImage={
-							this.props.activeMapImages[this.props.activeImageIndex]
-						}
-					/>
-					<TimeBar
-						timer={this.props.timer}
-						timerIsPaused={this.props.timerIsPaused}
-						stopTimer={this.props.stopTimer}
-						startTimer={this.props.startTimer}
-					/>
+					{this.props.activeMapImages[this.props.activeImageIndex] !==
+						undefined && (
+						<>
+							<CalloutImageBox
+								activeMap={this.props.activeMap}
+								timer={this.props.timer}
+								timerIsPaused={this.props.timerIsPaused}
+								activeImage={
+									this.props.activeMapImages[this.props.activeImageIndex]
+								}
+							/>
+							<TimeBar
+								timer={this.props.timer}
+								timerIsPaused={this.props.timerIsPaused}
+								stopTimer={this.props.stopTimer}
+								startTimer={this.props.startTimer}
+							/>
+						</>
+					)}
 				</div>
 			</CalloutViewerWrapper>
 		);
