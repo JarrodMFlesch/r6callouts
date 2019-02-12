@@ -65,6 +65,10 @@ class callout_image_box extends Component {
 		card_answer: ''
 	};
 
+	componentDidMount() {
+		this.setState({ card_answer: this.props.activeImage.callout_location });
+	}
+
 	componentDidUpdate(prevProps) {
 		if (
 			this.props.activeImage.callout_location !==

@@ -5,16 +5,9 @@ import CalloutImageBox from './callout_image_box';
 import TimeBar from './timebar';
 
 const CalloutViewerWrapper = styled.div`
-	background: linear-gradient(120deg, #44505f, #19232e);
-	margin-left: 260px;
-	color: #fff;
-	padding: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: calc(100vh - 60px);
-	overflow-x: hidden;
-	overflow-y: scroll;
 	> div {
 		width: 80%;
 		display: flex;

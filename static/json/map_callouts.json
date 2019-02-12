@@ -4,32 +4,270 @@
 		"full_map_name": "clubhouse FULLNAME",
 		"images": [
 			{
-				"image_path": "/static/images/callout_images/clubhouse/blue_stairs_supply.jpg",
-				"callout_location": "Blue Stairs Supply"
+				"image_path": "/static/images/callout_images/clubhouse/blue_stairs.jpg",
+				"callout_location": "Blue Stairs"
 			},
 			{
-				"image_path": "/static/images/callout_images/clubhouse/bar_projector.jpg",
-				"callout_location": "Bar Projector"
+				"image_path": "/static/images/callout_images/clubhouse/cash.jpg",
+				"callout_location": "Cash"
+			},
+			{
+				"image_path": "/static/images/callout_images/clubhouse/church_minibar.jpg",
+				"callout_location": "Church Minibar"
+			},
+			{
+				"image_path": "/static/images/callout_images/clubhouse/church.jpg",
+				"callout_location": "Church"
 			},
 			{
 				"image_path": "/static/images/callout_images/clubhouse/construction.jpg",
-				"callout_location": "2F Contstruction"
+				"callout_location": "Construction"
 			},
 			{
-				"image_path": "/static/images/callout_images/clubhouse/logistics_office.jpg",
-				"callout_location": "Logistics Office"
+				"image_path": "/static/images/callout_images/clubhouse/kitchen.jpg",
+				"callout_location": "Kitchen"
 			},
 			{
 				"image_path": "/static/images/callout_images/clubhouse/lounge.jpg",
-				"callout_location": "1F Lounge"
+				"callout_location": "Lounge"
 			},
 			{
-				"image_path": "/static/images/callout_images/clubhouse/main_bar.jpg",
-				"callout_location": "Main Bar"
+				"image_path": "/static/images/callout_images/clubhouse/master_bedroom.jpg",
+				"callout_location": "Master Bedroom"
 			},
 			{
-				"image_path": "/static/images/callout_images/clubhouse/server_room.jpg",
-				"callout_location": "Server Room"
+				"image_path": "/static/images/callout_images/clubhouse/moto.jpg",
+				"callout_location": "Moto"
+			},
+			{
+				"image_path": "/static/images/callout_images/clubhouse/red_stairs.jpg",
+				"callout_location": "Red Stairs"
+			},
+			{
+				"image_path": "/static/images/callout_images/clubhouse/servers.jpg",
+				"callout_location": "Servers"
+			},
+			{
+				"image_path": "/static/images/callout_images/clubhouse/urinals.jpg",
+				"callout_location": "Urinals"
+			},
+			{
+				"image_path": "/static/images/callout_images/clubhouse/weightroom.jpg",
+				"callout_location": "Weightroom"
+			}
+		]
+	},
+	{
+		"map_name": "bank",
+		"full_map_name": "bank FULLNAME",
+		"images": [
+			{
+				"image_path": "/static/images/callout_images/bank/banana_office.jpg",
+				"callout_location": "Banana Office"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/banana.jpg",
+				"callout_location": "Banana"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/beepers.jpg",
+				"callout_location": "Beepers"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/circle_desk.jpg",
+				"callout_location": "Circle Desk"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/dirt_tunnel.jpg",
+				"callout_location": "Dirt Tunnel"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/elevator_stairs.jpg",
+				"callout_location": "Elevator Stairs"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/garage.jpg",
+				"callout_location": "Garage"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/gold_room.jpg",
+				"callout_location": "Gold Room"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/long_desk.jpg",
+				"callout_location": "Long Desk"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/main_lobby_lounge.jpg",
+				"callout_location": "Main Lobby Lounge"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/open_area.jpg",
+				"callout_location": "Open Area"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/open_small_office.jpg",
+				"callout_location": "Open Small Office"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/red_hall.jpg",
+				"callout_location": "Red Hall"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/server.jpg",
+				"callout_location": "Server"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/stock_trading.jpg",
+				"callout_location": "Stock Trading"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/supply_closet.jpg",
+				"callout_location": "Supply Closet"
+			},
+			{
+				"image_path": "/static/images/callout_images/bank/vault.jpg",
+				"callout_location": "Vault"
+			}
+		]
+	},
+	{
+		"map_name": "consulate",
+		"full_map_name": "consulate FULLNAME",
+		"images": [
+			{
+				"image_path": "/static/images/callout_images/consulate/2f_bathroom.jpg",
+				"callout_location": "2F Bathroom"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/admin_office.jpg",
+				"callout_location": "Admin Office"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/basement_spiral.jpg",
+				"callout_location": "Basement Spiral"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/circle_desk.jpg",
+				"callout_location": "Circle Desk"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/connector.jpg",
+				"callout_location": "Connector"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/flipped_desk.jpg",
+				"callout_location": "Flipped Desk"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/front_desk.jpg",
+				"callout_location": "2F Front Desk"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/garage.jpg",
+				"callout_location": "Garage"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/kitchen.jpg",
+				"callout_location": "Kitchen"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/long_desk.jpg",
+				"callout_location": "Long Desk"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/printer.jpg",
+				"callout_location": "Printer"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/vending.jpg",
+				"callout_location": "Vending"
+			},
+			{
+				"image_path": "/static/images/callout_images/consulate/visa_stairs_basement.jpg",
+				"callout_location": "Basement Visa Stairs"
+			}
+		]
+	},
+	{
+		"map_name": "oregon",
+		"full_map_name": "oregon FULLNAME",
+		"images": [
+			{
+				"image_path": "/static/images/callout_images/oregon/armory_stairs.jpg",
+				"callout_location": "Armory"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/attic.jpg",
+				"callout_location": "Attic"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/basement_stairs.jpg",
+				"callout_location": "Basement Stairs"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/big_window.jpg",
+				"callout_location": "Big Window"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/classroom.jpg",
+				"callout_location": "Classroom"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/construction_tarp.jpg",
+				"callout_location": "Construction Tarp"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/dining_90.jpg",
+				"callout_location": "Dining 90"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/dining.jpg",
+				"callout_location": "Dining"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/garage.jpg",
+				"callout_location": "Garage"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/hobo_window.jpg",
+				"callout_location": "Hobo Window"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/kids_bunk.jpg",
+				"callout_location": "Kids Bunk"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/kitchen.jpg",
+				"callout_location": "Kitchen"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/master_bedroom.jpg",
+				"callout_location": "Master Bedroom"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/meeting.jpg",
+				"callout_location": "Meeting"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/small_tower.jpg",
+				"callout_location": "Small Tower"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/t2.jpg",
+				"callout_location": "T2"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/t3.jpg",
+				"callout_location": "T3"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/white_bunk.jpg",
+				"callout_location": "White Bunk"
+			},
+			{
+				"image_path": "/static/images/callout_images/oregon/white_stairs.jpg",
+				"callout_location": "White Stairs"
 			}
 		]
 	}

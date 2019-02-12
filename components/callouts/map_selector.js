@@ -7,7 +7,6 @@ import MapThumbnails from '../../static/json/map_thumbnails.json';
 const Sidebar = styled.div`
 	max-width: 260px;
 	background: #1b232e;
-	box-shadow: 2px 0px 6px 0px #09101a;
 	z-index: 1;
 	position: fixed;
 	width: 260px;
