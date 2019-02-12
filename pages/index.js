@@ -66,6 +66,13 @@ class Callouts extends Component {
 
 		CalloutImageJson.map(current_map => {
 			if (current_map.map_name === map_name_passed) {
+				for (let i = current_map.images.length - 1; i > 0; i--) {
+					const j = Math.floor(Math.random() * (i + 1));
+					[current_map.images[i], current_map.images[j]] = [
+						current_map.images[j],
+						current_map.images[i]
+					];
+				}
 				this.setState(
 					{ map_images: current_map.images, map_image_index: 0 },
 					this.startTimer()
