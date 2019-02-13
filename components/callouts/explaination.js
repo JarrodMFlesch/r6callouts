@@ -4,6 +4,12 @@ import styled from 'styled-components';
 const ExplainationWrapper = styled.div`
 	margin-top: 55px;
 	margin-left: 35px;
+	@media (max-width: 800px) {
+		margin: unset;
+		h1:first-child {
+			margin-top: 1.5rem;
+		}
+	}
 	h1 {
 		font-size: 2.4rem;
 		color: #00e6b6;
@@ -55,7 +61,7 @@ class Explaination extends Component {
 					aims to help out the community.
 				</p>
 
-				<h1>How To</h1>
+				<h1>How to use</h1>
 				<ul>
 					<li>Select a map on the left hand side</li>
 					<li>A set of images for that map will load</li>

@@ -48,9 +48,16 @@ const ImageWrapper = styled.div`
 					border-radius: 4px;
 					background: linear-gradient(20deg, #209aa0 -10%, #18e8b8);
 				}
+				@media (max-width: 800px) {
+					font-size: 24px;
+				}
 			}
 			.actual_answer {
 				font-weight: 700;
+				@media (max-width: 800px) {
+					font-size: 24px;
+					padding-top: 10px;
+				}
 			}
 		}
 		&.show {

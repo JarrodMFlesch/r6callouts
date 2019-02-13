@@ -9,10 +9,13 @@ const CalloutViewerWrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 	> div {
-		width: 80%;
+		width: 90%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		@media (max-width: 800px) {
+			width: 100%;
+		}
 		> div:last-child {
 			flex: 1;
 		}
@@ -65,7 +68,7 @@ class callout_viewer extends Component {
 						{this.props.activeMapImages[this.props.activeImageIndex] !==
 							undefined && (
 							<span className="showing_info">
-								Showing {this.props.activeImageIndex + 1} of{' '}
+								{this.props.activeImageIndex + 1} of{' '}
 								{this.props.activeMapImages.length}
 							</span>
 						)}

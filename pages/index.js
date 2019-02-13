@@ -5,9 +5,12 @@ import styled from 'styled-components';
 // -- json
 import CalloutImageJson from '../static/json/map_callouts.json';
 
+import Menu from '../components/Navigation';
 import MapSelector from '../components/callouts/map_selector';
 import CalloutViewer from '../components/callouts/callout_viewer';
 import Explaination from '../components/callouts/explaination';
+
+import { FaMapMarkedAlt } from 'react-icons/fa';
 
 //
 // -- Styles
@@ -23,10 +26,51 @@ const RightSideContainer = styled.div`
 	margin-left: 260px;
 	color: #fff;
 	padding: 30px;
+	display: block;
 	align-items: center;
+	justify-content: center;
 	height: calc(100vh - 60px);
 	overflow-x: hidden;
 	overflow-y: scroll;
+	transition: 300ms ease;
+	@media (max-width: 800px) {
+		z-index: 1;
+		margin: 0;
+		position: fixed;
+		top: 0;
+		&.hidden {
+			top: 100%;
+		}
+	}
+`;
+
+const MapToggle = styled.div`
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 20px;
+	background: #a2a6aa;
+	padding: 0;
+	font-size: 25px;
+	font-weight: 600;
+	border-radius: 50%;
+	color: #212c38;
+	border: 1px solid #ffffff;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	box-shadow: inset 0px 0px 16px 0px #ffffff, 0px 0px 16px 0px #99ffea;
+	transition: 300ms ease;
+	@media (min-width: 800px) {
+		display: none;
+	}
+	> svg {
+		position: relative;
+		top: 2px;
+	}
+	&.hidden {
+		bottom: -80px;
+	}
 `;
 
 class Callouts extends Component {
@@ -35,7 +79,8 @@ class Callouts extends Component {
 		timer: 5,
 		timer_is_paused: true,
 		map_images: [],
-		map_image_index: 0
+		map_image_index: 0,
+		viewbox_is_visible: true
 	};
 
 	startTimer = () => {
@@ -57,7 +102,7 @@ class Callouts extends Component {
 	setActiveMap = map_name => {
 		this.stopTimer();
 		clearInterval(this.incrementer);
-		this.setState({ active_map: map_name, timer: 5 });
+		this.setState({ active_map: map_name, timer: 5, viewbox_is_visible: true });
 		this.setActiveMapImages(map_name);
 	};
 
@@ -106,15 +151,32 @@ class Callouts extends Component {
 		}, 3500);
 	};
 
+	mobileViewboxToggle = () => {
+		this.setState({
+			viewbox_is_visible: false,
+			timer: 5,
+			timer_is_paused: true
+		});
+	};
+
 	render() {
 		return (
 			<Page>
+				<Menu />
 				<CalloutWrapper>
 					<MapSelector
 						setActiveMap={this.setActiveMap}
 						activeMap={this.state.active_map}
 					/>
-					<RightSideContainer>
+					<RightSideContainer
+						className={this.state.viewbox_is_visible ? '' : 'hidden'}
+					>
+						<MapToggle
+							onClick={this.mobileViewboxToggle}
+							className={this.state.viewbox_is_visible ? '' : 'hidden'}
+						>
+							<FaMapMarkedAlt />
+						</MapToggle>
 						{this.state.active_map === 'none' ? (
 							<Explaination />
 						) : (

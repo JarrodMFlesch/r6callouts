@@ -10,8 +10,13 @@ const Sidebar = styled.div`
 	z-index: 1;
 	position: fixed;
 	width: 260px;
+	min-height: 100vh;
+	@media (max-width: 800px) {
+		width: unset;
+		max-width: unset;
+	}
 	.maps_header {
-		height: 100px;
+		height: 80px;
 		position: relative;
 		display: flex;
 		justify-content: center;
@@ -31,14 +36,19 @@ const Sidebar = styled.div`
 			color: #fff;
 			text-transform: uppercase;
 			letter-spacing: 2px;
-			font-size: 50px;
+			font-size: 4rem;
 		}
 	}
 	.maps {
-		max-height: calc(100vh - 100px);
+		max-height: calc(100vh - 80px);
 		overflow: scroll;
 		width: 100%;
 		padding-left: unset;
+		@media (max-width: 800px) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 		.map {
 			cursor: pointer;
 			position: relative;
@@ -46,21 +56,27 @@ const Sidebar = styled.div`
 			margin: 23.5px 18px;
 			border-radius: 5px;
 			max-width: 275px;
-			box-shadow: 0px 3px 8px #171717;
+			height: 100%;
 			max-height: 160px;
 			transition: 300ms ease;
-			height: 132px;
+			@media (max-width: 800px) {
+				display: inline-block;
+				max-width: 150px;
+				margin: 10px;
+			}
 			&:hover {
 				transform: rotate(-2deg);
-				box-shadow: 0px 0px 11px 0px #00c3ad;
+				@media (max-width: 800px) {
+					transform: rotate(0deg);
+				}
 			}
 			img {
 				width: 100%;
-				height: 100%;
 				border-radius: inherit;
+				box-shadow: 0px 3px 8px #171717;
 			}
 			.map_overlay {
-				height: 100%;
+				height: calc(100% - 2px);
 				width: 100%;
 				background: rgba(0, 0, 0, 0.6);
 				position: absolute;
